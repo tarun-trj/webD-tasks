@@ -26,7 +26,7 @@ div.header{
     margin: 0 auto 0px;
     background-color: #656CEC;
     display: flex;
-    height: 70px;
+    height: 90px;
 }
 
 .header h1{
@@ -197,7 +197,7 @@ div.commoners:hover {
 
 
 
-@media screen and (max-width:780px){
+@media screen and (max-width:750px){
     #topper{
         width: 100%;
         max-width: 960px;
@@ -247,10 +247,12 @@ div.commoners:hover {
     #header {
         position: sticky;
         top: 0;
+        height: 70px;
     }
     
     hr{
         position: sticky;
         top: 70px;
     }
+
 }
