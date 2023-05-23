@@ -256,3 +256,21 @@ div.commoners:hover {
     }
 
 }
+
+@media screen and (max-width:410px){
+    .header h1{
+        font-size: 2em;
+    }
+
+    #header{
+        height: 50px;
+    }
+
+    hr{
+        top:50px;
+    }
+
+    .commoners{
+        font-size: 12px;
+    }
+}
