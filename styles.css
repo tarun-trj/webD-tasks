@@ -8,13 +8,18 @@ p,h2{
     display: inline-block;
 }
 
-
-#begin {
-    position: sticky;
-    top: 0;
-  }
-
 /* ------------heading------------ */
+
+#first{
+    order: 2;
+}
+#second{
+    order: 1;
+}
+#third{
+    order: 3;
+}
+
 div.header{
     width: 100%;
     max-width: 960px;
@@ -182,3 +187,40 @@ div.rankers:hover {
 div.commoners:hover {
     transform: scale(1.1); 
   }
+
+
+
+@media screen and (max-width:780px){
+    #topper{
+        width: 100%;
+        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 5px;
+        background-color: #656CEC;
+        color: white;
+        height: 1200px;
+        border-radius: 0 0 64px 64px;
+    }
+    
+    div.rankers{
+        margin: 10px;
+    }
+
+    #begin {
+        position: relative;
+        width: 100%;
+    }
+    
+    #first{
+        order: 1;
+    }
+    #second{
+        order: 2;
+    }
+    #third{
+        order: 3;
+    }
+}
