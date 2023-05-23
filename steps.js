@@ -45,11 +45,6 @@ function rank (globaldata) {
 
             t.setAttribute('id', ranker_pos[idx-1]);
             t.className = "rankers";
-            t.style.order = idx+1;
-
-            if(idx === 3){
-                t.style.order = 1;
-            }
 
             insVal(t, globalData, idx-1);
             //add div to top div
