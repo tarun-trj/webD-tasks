@@ -176,13 +176,9 @@ div.commoners{
 
 /* ------------anim------------ */
 div.rankers:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
     transform: scale(1.1); 
 }
 
 div.commoners:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
     transform: scale(1.1); 
   }
