@@ -1,36 +1,65 @@
-const url = 'https://www.coursehubiitg.in/api/codingweek/contributions';
-const myReq = new Request(url);
-let globalData;
+
+let globalData = [
+    {
+        "name": "Miles Artorio",
+        "points": 213,
+        "avatar": "https://i.pravatar.cc/300"
+    },
+    {
+        "name": "Pavitr Prabhakar",
+        "points": 325,
+        "avatar": "https://i.pravatar.cc/292"
+    },
+    {
+        "name": "Kane",
+        "points": 324,
+        "avatar": "https://i.pravatar.cc/293"
+    },
+    {
+        "name": "Tris Adams",
+        "points": 123,
+        "avatar": "https://i.pravatar.cc/294"
+    },
+    {
+        "name": "Aron with an A",
+        "points": 454,
+        "avatar": "https://i.pravatar.cc/295"
+    },
+    {
+        "name": "NoobMaster",
+        "points": 422,
+        "avatar": "https://i.pravatar.cc/296"
+    },
+    {
+        "name": "Sergio Robertson",
+        "points": 14,
+        "avatar": "https://i.pravatar.cc/297"
+    },
+    {
+        "name": "Quinn Mayer",
+        "points": 339,
+        "avatar": "https://i.pravatar.cc/298"
+    },
+    {
+        "name": "Johnathan Avatar",
+        "points": 900,
+        "avatar": "https://i.pravatar.cc/299"
+    }
+];
+
 let ranker =[1,2,3];
 let ranker_pos = ["first", "second", "third"];
 
 const above = document.querySelector("#topper"); //top sections
 const bottom = document.querySelector("#common"); //lower section
 
-fetch(url)
-    .then((response) => response.json())
-
-    //save in global var
-    .then(Jsonform => {
-
-     globalData = Jsonform;
-
-    })
-
-    //sort data according to points reverse order
-    .then(() => {
-        globalData.sort(function(a ,b){
-            return b.points - a.points;
-        });
-    })
-
-    //DOM traversal create new div for every element
-    .then(() => {
-        rank(globalData);
-    })
-    .catch(error => console.error)
 
 
+globalData.sort(function(a ,b){
+    return b.points - a.points;
+});
+
+rank(globalData);
 
 
 
@@ -85,6 +114,7 @@ function insVal (x, globaldata, i){
     r.className = "number";
 
     naam.textContent = globaldata[i].name;
+
     pt.textContent = globaldata[i].points;
     pt.className = "pts";
     
