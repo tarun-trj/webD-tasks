@@ -26,6 +26,7 @@ div.header{
     margin: 0 auto 0px;
     background-color: #656CEC;
     display: flex;
+    height: 70px;
 }
 
 .header h1{
@@ -186,7 +187,13 @@ div.rankers:hover {
 
 div.commoners:hover {
     transform: scale(1.1); 
-  }
+}
+
+#begin {
+    position: sticky;
+    top: 0;
+}
+
 
 
 
@@ -201,12 +208,12 @@ div.commoners:hover {
         margin: 0 auto 5px;
         background-color: #656CEC;
         color: white;
-        height: 1200px;
+        height: 1000px;
         border-radius: 0 0 64px 64px;
     }
     
     div.rankers{
-        margin: 10px;
+        margin: 10px 10px 20px 10px;
     }
 
     #begin {
@@ -216,11 +223,34 @@ div.commoners:hover {
     
     #first{
         order: 1;
+        font-size: 1em;
     }
     #second{
         order: 2;
     }
     #third{
         order: 3;
+    }
+
+
+    #first img{
+        width: 150px;
+        max-width: 150px;
+        margin: 10px;
+        height: 150px;
+    }
+    
+    .header h1{
+        font-size: 3em;
+    }
+    
+    #header {
+        position: sticky;
+        top: 0;
+    }
+    
+    hr{
+        position: sticky;
+        top: 70px;
     }
 }
